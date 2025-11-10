@@ -43,10 +43,6 @@ A arquitetura foi desenvolvida para funcionar em três camadas principais:
 └── 📁 frontend
 ├── index.html
 └── script.js
-
-yaml
-Copiar código
-
 ---
 
 ## Link do WoWKi: https://wokwi.com/projects/446990799017967617
@@ -97,7 +93,6 @@ GET: retorna a lista de jogadoras com suas velocidades atuais e identifica autom
 Exemplo de resposta JSON:
 
 json
-Copiar código
 {
   "todas": {
     "Jogadora_A": 7.5,
@@ -145,17 +140,12 @@ Copiar código
 cd WowKI_IoT_EdgeCPT/backend
 python3 app.py
 Servidor ativo em:
-
-cpp
-Copiar código
 http://54.172.140.81:5000
 4️⃣ Rodar o IoT (ESP32 no Wokwi)
 Abra iot/wowki_simulador.ino.
 
 Edite a linha do servidor:
 
-cpp
-Copiar código
 String serverUrl = "http://54.172.140.81:5000/api/velocidade";
 Inicie a simulação.
 
